@@ -1,0 +1,26 @@
+PODS:
+  - CHTCollectionViewWaterfallLayout/ObjC (0.9.10)
+  - Masonry (1.1.0)
+  - SDWebImage (5.21.5):
+    - SDWebImage/Core (= 5.21.5)
+  - SDWebImage/Core (5.21.5)
+
+DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout/ObjC
+  - Masonry
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - CHTCollectionViewWaterfallLayout
+    - Masonry
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: e9c98383c7572d713c1a0d7dd2783b10599b9838
+
+PODFILE CHECKSUM: d040ab3b0b79e8eb76053f84b39d4d112ca177ab
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,25 @@
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '11.0'
+
+target 'PlayGround' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for blank
+  pod 'Masonry'
+  pod'CHTCollectionViewWaterfallLayout/ObjC'
+  pod 'SDWebImage'
+
+end
+
+# 2. 修复刚才那个 libarclite 报错的代码加在这里
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      end
+    end
+  end
+end
